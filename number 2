@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// Global variable to track the system-wide total number of books borrowed
+// Global variable to track  total number of books borrowed
 int totalBooksBorrowed = 0;
 
 // Function prototypes
@@ -44,11 +44,11 @@ void report() {
         outFile.close();
     }
 }
-
+//dont touch
 int main() {
     int uid, bookCount;
 
-    // Simulating book checkouts for a user 1
+    // Simulating book checkouts for  user 1
     bookCount = 0;
     uid = generateUserID();
     borrowBook(bookCount);
@@ -58,27 +58,27 @@ int main() {
     borrowBook(bookCount);
     log(uid, bookCount);
 
-    // Simulating book checkouts for another user 2
+    // Simulating book checkouts for user 2
     bookCount = 0;
     uid = generateUserID();
     borrowBook(bookCount);
     log(uid, bookCount);
 
-    // Simulating book checkouts for another user 3
-    bookCount = 0;
-    uid = generateUserID();
-    borrowBook(bookCount);
-    borrowBook(bookCount);
-    log(uid, bookCount);
-
-    // Simulating book checkouts for another user 4
+    // Simulating book checkouts for user 3
     bookCount = 0;
     uid = generateUserID();
     borrowBook(bookCount);
     borrowBook(bookCount);
     log(uid, bookCount);
 
-    // Simulating book checkouts for another user 5
+    // Simulating book checkouts for user 4
+    bookCount = 0;
+    uid = generateUserID();
+    borrowBook(bookCount);
+    borrowBook(bookCount);
+    log(uid, bookCount);
+
+    // Simulating book checkouts for user 5
     bookCount = 0;
     uid = generateUserID();
     borrowBook(bookCount);
